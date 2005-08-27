@@ -1,4 +1,4 @@
-# $Rev: 3345 $, $Date: 2005-08-15 12:17:57 $
+# $Rev: 3345 $, $Date: 2005-08-27 17:42:47 $
 #
 Summary:	bitmap application
 Summary(pl):	Aplikacja bitmap
@@ -15,7 +15,7 @@ BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	xorg-lib-libXaw-devel
 BuildRequires:	xorg-util-util-macros
-BuildRequires:	pkg-config
+BuildRequires:	pkgconfig >= 0.19
 BuildRequires:	xorg-data-xbitmaps
 BuildRoot:	%{tmpdir}/bitmap-%{version}-root-%(id -u -n)
 
