@@ -1,12 +1,12 @@
 Summary:	bitmap application
 Summary(pl):	Aplikacja bitmap
 Name:		xorg-app-bitmap
-Version:	1.0.1
+Version:	1.0.2
 Release:	0.1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/X11R7.0/src/app/bitmap-%{version}.tar.bz2
-# Source0-md5:	f0f6b4e99ab01b55e2710720fa48dde0
+Source0:	http://xorg.freedesktop.org/releases/individual/app/bitmap-%{version}.tar.bz2
+# Source0-md5:	78e8ab5c1830e2cdfbff7a952162a5a7
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
