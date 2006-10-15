@@ -2,7 +2,7 @@ Summary:	bitmap application
 Summary(pl):	Aplikacja bitmap
 Name:		xorg-app-bitmap
 Version:	1.0.2
-Release:	0.1
+Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/app/bitmap-%{version}.tar.bz2
@@ -50,7 +50,11 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc COPYING ChangeLog
-%attr(755,root,root) %{_bindir}/*
-%{_datadir}/X11/app-defaults/*
+%attr(755,root,root) %{_bindir}/atobm
+%attr(755,root,root) %{_bindir}/bitmap
+%attr(755,root,root) %{_bindir}/bmtoa
+%{_datadir}/X11/app-defaults/Bitmap*
 %{_includedir}/X11/bitmaps/*
-%{_mandir}/man1/*.1x*
+%{_mandir}/man1/atobm.1x*
+%{_mandir}/man1/bitmap.1x*
+%{_mandir}/man1/bmtoa.1x*
