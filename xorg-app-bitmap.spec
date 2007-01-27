@@ -1,5 +1,5 @@
-Summary:	bitmap application
-Summary(pl):	Aplikacja bitmap
+Summary:	bitmap applications - bitmap editor and converter utilities
+Summary(pl):	Aplikacje bitmap - narzêdzia do modyfikowania i konwersji bitmap
 Name:		xorg-app-bitmap
 Version:	1.0.3
 Release:	1
@@ -21,10 +21,24 @@ Requires:	xorg-lib-libXt >= 1.0.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-bitmap application.
+The bitmap program is a rudimentary tool for creating or editing
+rectangular images made up of 1's and 0's. Bitmaps are used in X for
+defining clipping regions, cursor shapes, icon shapes, and tile and
+stipple patterns.
+
+The bmtoa and atobm filters convert bitmap files to and from ASCII
+strings. They are most commonly used to quickly print out bitmaps and
+to generate versions for including in text.
 
 %description -l pl
-Aplikacja bitmap.
+Program bitmap to podstawowe narzêdzie do tworzenia i modyfikowania
+prostok±tnych obrazów z³o¿onych z jedynek i zer. Bitmapy s± u¿ywane
+przez X do definiowania obszarów przycinania, kszta³tów kursorów,
+kszta³tów ikon oraz wzorów kafli i punktowania.
+
+Filtry bmtoa i atobm przekszta³caj± pliki bitmap do i z ³añcuchów
+ASCII. S± najczê¶ciej u¿ywane do szybkiego wypisywania bitmap i
+generowania wersji do w³±czenia w tekst.
 
 %prep
 %setup -q -n bitmap-%{version}
