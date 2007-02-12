@@ -1,5 +1,5 @@
 Summary:	bitmap applications - bitmap editor and converter utilities
-Summary(pl):	Aplikacje bitmap - narzêdzia do modyfikowania i konwersji bitmap
+Summary(pl.UTF-8):   Aplikacje bitmap - narzÄ™dzia do modyfikowania i konwersji bitmap
 Name:		xorg-app-bitmap
 Version:	1.0.3
 Release:	1
@@ -30,15 +30,15 @@ The bmtoa and atobm filters convert bitmap files to and from ASCII
 strings. They are most commonly used to quickly print out bitmaps and
 to generate versions for including in text.
 
-%description -l pl
-Program bitmap to podstawowe narzêdzie do tworzenia i modyfikowania
-prostok±tnych obrazów z³o¿onych z jedynek i zer. Bitmapy s± u¿ywane
-przez X do definiowania obszarów przycinania, kszta³tów kursorów,
-kszta³tów ikon oraz wzorów kafli i punktowania.
+%description -l pl.UTF-8
+Program bitmap to podstawowe narzÄ™dzie do tworzenia i modyfikowania
+prostokÄ…tnych obrazÃ³w zÅ‚oÅ¼onych z jedynek i zer. Bitmapy sÄ… uÅ¼ywane
+przez X do definiowania obszarÃ³w przycinania, ksztaÅ‚tÃ³w kursorÃ³w,
+ksztaÅ‚tÃ³w ikon oraz wzorÃ³w kafli i punktowania.
 
-Filtry bmtoa i atobm przekszta³caj± pliki bitmap do i z ³añcuchów
-ASCII. S± najczê¶ciej u¿ywane do szybkiego wypisywania bitmap i
-generowania wersji do w³±czenia w tekst.
+Filtry bmtoa i atobm przeksztaÅ‚cajÄ… pliki bitmap do i z Å‚aÅ„cuchÃ³w
+ASCII. SÄ… najczÄ™Å›ciej uÅ¼ywane do szybkiego wypisywania bitmap i
+generowania wersji do wÅ‚Ä…czenia w tekst.
 
 %prep
 %setup -q -n bitmap-%{version}
