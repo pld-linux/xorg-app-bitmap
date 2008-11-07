@@ -2,7 +2,7 @@ Summary:	bitmap applications - bitmap editor and converter utilities
 Summary(pl.UTF-8):	Aplikacje bitmap - narzędzia do modyfikowania i konwersji bitmap
 Name:		xorg-app-bitmap
 Version:	1.0.3
-Release:	2
+Release:	3
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/app/bitmap-%{version}.tar.bz2
