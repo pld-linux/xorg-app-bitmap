@@ -2,11 +2,12 @@ Summary:	bitmap applications - bitmap editor and converter utilities
 Summary(pl.UTF-8):	Aplikacje bitmap - narzędzia do modyfikowania i konwersji bitmap
 Name:		xorg-app-bitmap
 Version:	1.0.3
-Release:	3
+Release:	4
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/app/bitmap-%{version}.tar.bz2
 # Source0-md5:	98200c358e5401d648b980564d9ae39d
+Patch0:		%{name}-xaw.patch
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
@@ -42,6 +43,7 @@ generowania wersji do włączenia w tekst.
 
 %prep
 %setup -q -n bitmap-%{version}
+%patch0 -p1
 
 %build
 %{__aclocal}
