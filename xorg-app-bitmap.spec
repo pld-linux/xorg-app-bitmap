@@ -1,5 +1,5 @@
-Summary:	bitmap applications - bitmap editor and converter utilities
-Summary(pl.UTF-8):	Aplikacje bitmap - narzędzia do modyfikowania i konwersji bitmap
+Summary:	bitmap applications - bitmap (XBM) editor and converter utilities
+Summary(pl.UTF-8):	Aplikacje bitmap - narzędzia do modyfikowania i konwersji bitmap (XBM)
 Name:		xorg-app-bitmap
 Version:	1.0.4
 Release:	1
@@ -13,8 +13,9 @@ BuildRequires:	automake
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	xorg-data-xbitmaps
 BuildRequires:	xorg-lib-libXaw-devel
+BuildRequires:	xorg-lib-libXmu-devel
 BuildRequires:	xorg-lib-libXt-devel >= 1.0.0
-BuildRequires:	xorg-util-util-macros >= 0.99.2
+BuildRequires:	xorg-util-util-macros >= 1.3
 # for dirs (only???)
 Requires:	xorg-data-xbitmaps
 Requires:	xorg-lib-libXt >= 1.0.0
@@ -63,7 +64,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog
+%doc COPYING ChangeLog README
 %attr(755,root,root) %{_bindir}/atobm
 %attr(755,root,root) %{_bindir}/bitmap
 %attr(755,root,root) %{_bindir}/bmtoa
