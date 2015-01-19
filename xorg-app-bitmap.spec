@@ -1,12 +1,12 @@
 Summary:	bitmap applications - bitmap (XBM) editor and converter utilities
 Summary(pl.UTF-8):	Aplikacje bitmap - narzędzia do modyfikowania i konwersji bitmap (XBM)
 Name:		xorg-app-bitmap
-Version:	1.0.7
+Version:	1.0.8
 Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/app/bitmap-%{version}.tar.bz2
-# Source0-md5:	9c18cc1048146e29d68bfa9d0348b11d
+# Source0-md5:	453cc80f9f557208b1e651b743a2b3bb
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
@@ -16,6 +16,7 @@ BuildRequires:	xorg-data-xbitmaps
 BuildRequires:	xorg-lib-libXaw-devel
 BuildRequires:	xorg-lib-libXmu-devel
 BuildRequires:	xorg-lib-libXt-devel >= 1.0.0
+BuildRequires:	xorg-proto-xproto-devel >= 7.0.25
 BuildRequires:	xorg-util-util-macros >= 1.8
 # for dirs (only???)
 Requires:	xorg-data-xbitmaps
@@ -73,7 +74,19 @@ rm -rf $RPM_BUILD_ROOT
 %attr(755,root,root) %{_bindir}/bitmap
 %attr(755,root,root) %{_bindir}/bmtoa
 %{_datadir}/X11/app-defaults/Bitmap*
-%{_includedir}/X11/bitmaps/*
-%{_mandir}/man1/atobm.1x*
-%{_mandir}/man1/bitmap.1x*
-%{_mandir}/man1/bmtoa.1x*
+%{_includedir}/X11/bitmaps/Dashes
+%{_includedir}/X11/bitmaps/Down
+%{_includedir}/X11/bitmaps/Excl
+%{_includedir}/X11/bitmaps/FlipHoriz
+%{_includedir}/X11/bitmaps/FlipVert
+%{_includedir}/X11/bitmaps/Fold
+%{_includedir}/X11/bitmaps/Left
+%{_includedir}/X11/bitmaps/Right
+%{_includedir}/X11/bitmaps/RotateLeft
+%{_includedir}/X11/bitmaps/RotateRight
+%{_includedir}/X11/bitmaps/Stipple
+%{_includedir}/X11/bitmaps/Term
+%{_includedir}/X11/bitmaps/Up
+%{_mandir}/man1/atobm.1*
+%{_mandir}/man1/bitmap.1*
+%{_mandir}/man1/bmtoa.1*
