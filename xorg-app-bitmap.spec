@@ -1,17 +1,18 @@
 Summary:	bitmap applications - bitmap (XBM) editor and converter utilities
 Summary(pl.UTF-8):	Aplikacje bitmap - narzędzia do modyfikowania i konwersji bitmap (XBM)
 Name:		xorg-app-bitmap
-Version:	1.0.9
+Version:	1.1.0
 Release:	1
 License:	MIT
 Group:		X11/Applications
-Source0:	https://xorg.freedesktop.org/releases/individual/app/bitmap-%{version}.tar.bz2
-# Source0-md5:	b94172053ffa282bd88274f1e6a677f1
+Source0:	https://xorg.freedesktop.org/releases/individual/app/bitmap-%{version}.tar.xz
+# Source0-md5:	1c34d91eb4568c92e40fb9e300c36281
 URL:		https://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	sed >= 4.0
+BuildRequires:	tar >= 1:1.22
 BuildRequires:	xorg-data-xbitmaps
 BuildRequires:	xorg-lib-libX11-devel
 BuildRequires:	xorg-lib-libXaw-devel
@@ -19,6 +20,7 @@ BuildRequires:	xorg-lib-libXmu-devel
 BuildRequires:	xorg-lib-libXt-devel >= 1.0.0
 BuildRequires:	xorg-proto-xproto-devel >= 7.0.25
 BuildRequires:	xorg-util-util-macros >= 1.8
+BuildRequires:	xz
 # for dirs (only???)
 Requires:	xorg-data-xbitmaps
 Requires:	xorg-lib-libXt >= 1.0.0
